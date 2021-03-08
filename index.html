@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/slick.css" type="text/css" />
+  <link rel="stylesheet" href="css/slick-theme.css" type="text/css" />
+  <link rel="stylesheet" href="css/main.css" type="text/css" />
+  <title>スライドショー</title>
+</head>
+<body>
+  <main>
+    <h1>slickのスライドショー</h1>
+    <ul class="slider">
+      <li>
+        <img src="https://assets.media-platform.com/bi/dist/images/2017/12/04/5a21cc87f914c351018b7716.jpg"></img>
+      </li>
+      <li>
+        <img src="https://i.gzn.jp/img/2020/07/26/hubble-summertime-saturn/00_m.jpg"></img>
+      </li>
+      <li>
+        <img src="https://image.space.rakuten.co.jp/d/strg/ctrl/9/ca25a89a95a0c620ac4ddd3d9c221dc7d2c8ade9.30.2.9.2.jpeg"></img>
+      </li>
+      <li>
+        <img src="https://www.ozmall.co.jp/Content/upload/images/09eaeb7b689e483fb6f970a17681cb0b.jpg"></img>
+      </li>
+    </ul>
+    <p>4秒ごとに自動でスライドします</p>
+    <p>左右の矢印を押下でスライドさせることができます</p>
+  </main>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="slick.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.slider').slick({
+        autoplay: true,
+        autoplaySpeed: 4000,
+      });
+    });
+  </script>
+</body>
+</html>
